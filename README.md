@@ -24,9 +24,10 @@ To load and prepare the data:
 ```
 import pandas as pd
 
-train_data = pd.read_parquet('train.parquet')
+train_data = pd.read_parquet('train.parquet') # Here and below, adjust the path accordingly
 test_data = pd.read_parquet('test.parquet')
 ```
+
 The data is then transformed using torchvision.transforms to resize, augment, and normalize the images according to ImageNet statistics.
 
 ## Model Training
