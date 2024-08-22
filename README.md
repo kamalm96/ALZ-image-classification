@@ -1,4 +1,4 @@
-#ResNet50 Image Classification
+# ResNet50 Image Classification
 This repository contains the code and data necessary to train and evaluate an image classification model using a pre-trained ResNet50 architecture. The model is fine-tuned to classify images stored in Parquet files, which contain image data in byte format. The project includes data loading, preprocessing, model training, evaluation, and saving of the trained model.
 
 ##Table of Contents
