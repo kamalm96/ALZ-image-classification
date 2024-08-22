@@ -12,22 +12,20 @@ This repository contains the code and data necessary to train and evaluate an im
 ## Installation
 To run this project, you need to have Python installed along with the necessary libraries. You can install the required libraries using the following command:
 
-bash
-Copy code
-pip install pandas pillow torchvision torch
-Ensure that you have a GPU available if you want to speed up the training process.
+
+```pip install pandas pillow torchvision torch```
+Ensure that you have a GPU available if you want to speed up the training process. - It will use the cpu if not available.
 
 ## Data Preparation
 The training and testing datasets are stored in Parquet files (train.parquet and test.parquet). Each dataset contains image data in byte format and corresponding labels.
 
 To load and prepare the data:
-
-python
-Copy code
+```
 import pandas as pd
 
 train_data = pd.read_parquet('train.parquet')
 test_data = pd.read_parquet('test.parquet')
+```
 The data is then transformed using torchvision.transforms to resize, augment, and normalize the images according to ImageNet statistics.
 
 ## Model Training
