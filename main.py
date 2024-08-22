@@ -57,7 +57,6 @@ num_classes = len(train_data['label'].unique())
 num_features = model.fc.in_features
 model.fc = nn.Linear(num_features, num_classes)
 
-# I am using my GPU because it's faster to run a model on it so don't worry about this
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = model.to(device)
 
@@ -65,7 +64,7 @@ model = model.to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
 
-# Training for 10 epochs, 10 here is perfect, more is too much, and less is more prone to loss, I tested different numbers
+# Training for 10 epochs
 num_epochs = 10
 for epoch in range(num_epochs):
     model.train()
