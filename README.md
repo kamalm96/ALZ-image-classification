@@ -12,8 +12,9 @@ This repository contains the code and data necessary to train and evaluate an im
 ## Installation
 To run this project, you need to have Python installed along with the necessary libraries. You can install the required libraries using the following command:
 
-
-```pip install pandas pillow torchvision torch```
+```
+pip install pandas pillow torchvision torch
+```
 Ensure that you have a GPU available if you want to speed up the training process. - It will use the cpu if not available.
 
 ## Data Preparation
