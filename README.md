@@ -101,6 +101,7 @@ Epoch [x->10/10], Loss: y
 Test Loss: y
 Test Accuracy: z%
 These metrics can vary depending on the specific dataset and hyperparameters used. The dataset used is included in this repo.
+```
 @dataset{alzheimer_mri_dataset,
   author = {Falah.G.Salieh},
   title = {Alzheimer MRI Dataset},
@@ -109,7 +110,7 @@ These metrics can vary depending on the specific dataset and hyperparameters use
   version = {1.0},
   url = {https://huggingface.co/datasets/Falah/Alzheimer_MRI}
 }
-
+```
 
 ## Acknowledgments
 This project uses the ResNet50 architecture provided by the PyTorch torchvision.models module, pre-trained on ImageNet. The data loading and transformation processes utilize Pandas and PIL libraries.
